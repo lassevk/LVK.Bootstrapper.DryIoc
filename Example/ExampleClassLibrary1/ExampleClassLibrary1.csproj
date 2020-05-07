@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Update="ExampleService1.cs">
+        <DependentUpon>IExampleService1.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\LVK.Bootstrapper.DryIoc\LVK.Bootstrapper.DryIoc.csproj" />
+    </ItemGroup>
+
+</Project>

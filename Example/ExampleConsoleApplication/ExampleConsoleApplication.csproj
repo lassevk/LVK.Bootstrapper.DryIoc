@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ExampleClassLibrary1\ExampleClassLibrary1.csproj" />
+      <ProjectReference Include="..\ExampleClassLibrary2\ExampleClassLibrary2.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="ExampleApplication.cs">
+        <DependentUpon>IExampleApplication.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

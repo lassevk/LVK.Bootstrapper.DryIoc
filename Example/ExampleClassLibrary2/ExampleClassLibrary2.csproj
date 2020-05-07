@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ExampleClassLibrary1\ExampleClassLibrary1.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="ExampleService2.cs">
+        <DependentUpon>IExampleService2.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
